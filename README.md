@@ -251,26 +251,6 @@ This separation enables:
 - Independent tuning of vector vs. graph retrieval
 - Transparent explanation of where answers come from
 
-## Why This Project Matters
-
-This project demonstrates several important concepts in modern AI system design:
-
-- **Beyond Basic RAG**: Shows how GraphRAG extends traditional RAG by adding relationship-aware retrieval
-- **Graph Data Modeling**: Illustrates how to model document knowledge as a graph (entities, relationships, properties)
-- **Hybrid Retrieval**: Demonstrates combining vector search (semantic) with graph traversal (relational) for comprehensive context
-- **Production-Ready Architecture**: Clean separation of concerns, environment-based configuration, and deployment considerations
-- **Real-World Considerations**: Handles PDF parsing, entity extraction, metadata management, and source attribution
-
-This is not just a demo—it's a complete, working system that could be extended for production use with proper infrastructure and scaling considerations.
-
-## Future Improvements
-
-- **Entity Extraction**: Currently uses LLM-based extraction; could be enhanced with specialized NER models
-- **Graph Schema**: Fixed entity types (Policy, Section, Topic, Concept); could be made more flexible
-- **Scalability**: ChromaDB is suitable for small-to-medium datasets; could scale to distributed vector DBs (Pinecone, Weaviate)
-- **Caching**: No query result caching; could add Redis for performance
-- **UI**: Basic Streamlit UI; could be enhanced with React/Next.js for better UX
-- **Error Handling**: Basic error handling; could add retry logic and better user feedback
 
 ## Troubleshooting
 
@@ -293,5 +273,27 @@ This is not just a demo—it's a complete, working system that could be extended
 - Ensure PDFs are not password-protected
 - Check file size limits (default: 200MB per file)
 - Verify PyMuPDF is installed correctly
+
+## Future Improvements
+
+- **Entity Extraction**: Currently uses LLM-based extraction; could be enhanced with specialized NER models
+- **Graph Schema**: Fixed entity types (Policy, Section, Topic, Concept); could be made more flexible
+- **Scalability**: ChromaDB is suitable for small-to-medium datasets; could scale to distributed vector DBs (Pinecone, Weaviate)
+- **Caching**: No query result caching; could add Redis for performance
+- **UI**: Basic Streamlit UI; could be enhanced with React/Next.js for better UX
+- **Error Handling**: Basic error handling; could add retry logic and better user feedback
+
+## Why This Project Matters
+
+This project demonstrates several important concepts in modern AI system design:
+
+- **Beyond Basic RAG**: Shows how GraphRAG extends traditional RAG by adding relationship-aware retrieval
+- **Graph Data Modeling**: Illustrates how to model document knowledge as a graph (entities, relationships, properties)
+- **Hybrid Retrieval**: Demonstrates combining vector search (semantic) with graph traversal (relational) for comprehensive context
+- **Production-Ready Architecture**: Clean separation of concerns, environment-based configuration, and deployment considerations
+- **Real-World Considerations**: Handles PDF parsing, entity extraction, metadata management, and source attribution
+
+This is not just a demo—it's a complete, working system that could be extended for production use with proper infrastructure and scaling considerations.
+
 
 
