@@ -263,7 +263,7 @@ This project demonstrates several important concepts in modern AI system design:
 
 This is not just a demo—it's a complete, working system that could be extended for production use with proper infrastructure and scaling considerations.
 
-## Limitations & Future Improvements
+## Future Improvements
 
 - **Entity Extraction**: Currently uses LLM-based extraction; could be enhanced with specialized NER models
 - **Graph Schema**: Fixed entity types (Policy, Section, Topic, Concept); could be made more flexible
@@ -294,13 +294,4 @@ This is not just a demo—it's a complete, working system that could be extended
 - Check file size limits (default: 200MB per file)
 - Verify PyMuPDF is installed correctly
 
-## License
 
-MIT License
-
-## Acknowledgments
-
-- Built with [LlamaIndex](https://www.llamaindex.ai/) for document processing and LLM integration
-- Graph database: [Neo4j](https://neo4j.com/)
-- Inspired by GraphRAG research from Microsoft
-- Vector storage: [ChromaDB](https://www.trychroma.com/)
